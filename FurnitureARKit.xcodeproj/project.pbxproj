@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		3AD087A428B9D5C10026F431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087A328B9D5C10026F431 /* AppDelegate.swift */; };
 		3AD087A628B9D5C10026F431 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087A528B9D5C10026F431 /* ContentView.swift */; };
-		3AD087A828B9D5C10026F431 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087A728B9D5C10026F431 /* Experience.rcproject */; };
 		3AD087AA28B9D5C20026F431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD087A928B9D5C20026F431 /* Assets.xcassets */; };
 		3AD087AD28B9D5C20026F431 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD087AC28B9D5C20026F431 /* Preview Assets.xcassets */; };
 		3AD087B728B9D5C30026F431 /* FurnitureARKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087B628B9D5C30026F431 /* FurnitureARKitTests.swift */; };
 		3AD087C128B9D5C30026F431 /* FurnitureARKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087C028B9D5C30026F431 /* FurnitureARKitUITests.swift */; };
 		3AD087C328B9D5C30026F431 /* FurnitureARKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087C228B9D5C30026F431 /* FurnitureARKitUITestsLaunchTests.swift */; };
+		3AD087D228B9D7BF0026F431 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3AD087D028B9D7BE0026F431 /* toy_biplane.usdz */; };
+		3AD087D328B9D7BF0026F431 /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3AD087D128B9D7BF0026F431 /* toy_car.usdz */; };
+		3AD087D528B9F0630026F431 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD087D428B9F0630026F431 /* Model.swift */; };
+		3AD087D828BA6BB80026F431 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 3AD087D728BA6BB80026F431 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		3AD087A028B9D5C10026F431 /* FurnitureARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurnitureARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD087A328B9D5C10026F431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AD087A528B9D5C10026F431 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3AD087A728B9D5C10026F431 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		3AD087A928B9D5C20026F431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD087AC28B9D5C20026F431 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3AD087B228B9D5C30026F431 /* FurnitureARKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureARKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,9 @@
 		3AD087BC28B9D5C30026F431 /* FurnitureARKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureARKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD087C028B9D5C30026F431 /* FurnitureARKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureARKitUITests.swift; sourceTree = "<group>"; };
 		3AD087C228B9D5C30026F431 /* FurnitureARKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureARKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AD087D028B9D7BE0026F431 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		3AD087D128B9D7BF0026F431 /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		3AD087D428B9F0630026F431 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD087D828BA6BB80026F431 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +102,12 @@
 		3AD087A228B9D5C10026F431 /* FurnitureARKit */ = {
 			isa = PBXGroup;
 			children = (
+				3AD087CF28B9D7180026F431 /* Models */,
 				3AD087A328B9D5C10026F431 /* AppDelegate.swift */,
 				3AD087A528B9D5C10026F431 /* ContentView.swift */,
-				3AD087A728B9D5C10026F431 /* Experience.rcproject */,
 				3AD087A928B9D5C20026F431 /* Assets.xcassets */,
 				3AD087AB28B9D5C20026F431 /* Preview Content */,
+				3AD087D428B9F0630026F431 /* Model.swift */,
 			);
 			path = FurnitureARKit;
 			sourceTree = "<group>";
@@ -130,6 +137,15 @@
 			path = FurnitureARKitUITests;
 			sourceTree = "<group>";
 		};
+		3AD087CF28B9D7180026F431 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AD087D028B9D7BE0026F431 /* toy_biplane.usdz */,
+				3AD087D128B9D7BF0026F431 /* toy_car.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +162,9 @@
 			dependencies = (
 			);
 			name = FurnitureARKit;
+			packageProductDependencies = (
+				3AD087D728BA6BB80026F431 /* FocusEntity */,
+			);
 			productName = FurnitureARKit;
 			productReference = 3AD087A028B9D5C10026F431 /* FurnitureARKit.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 3AD0879728B9D5C10026F431;
+			packageReferences = (
+				3AD087D628BA6BB80026F431 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 3AD087A128B9D5C10026F431 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD087D228B9D7BF0026F431 /* toy_biplane.usdz in Resources */,
+				3AD087D328B9D7BF0026F431 /* toy_car.usdz in Resources */,
 				3AD087AD28B9D5C20026F431 /* Preview Assets.xcassets in Resources */,
 				3AD087AA28B9D5C20026F431 /* Assets.xcassets in Resources */,
 			);
@@ -260,9 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD087D528B9F0630026F431 /* Model.swift in Sources */,
 				3AD087A628B9D5C10026F431 /* ContentView.swift in Sources */,
 				3AD087A428B9D5C10026F431 /* AppDelegate.swift in Sources */,
-				3AD087A828B9D5C10026F431 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AD087D628BA6BB80026F431 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AD087D728BA6BB80026F431 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AD087D628BA6BB80026F431 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AD0879828B9D5C10026F431 /* Project object */;
 }
